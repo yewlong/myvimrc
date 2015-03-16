@@ -1,41 +1,52 @@
-set backupdir=c:\users\leongyl\vimbak//
-set directory=c:\users\leongyl\vimswap//
-set backup
-set cursorline
+"******************************
+"THINGS MOST PEOPLE WOULD WANT
+"******************************
 set autoindent
 set nocompatible
-set hlsearch
-set ts=4
 set number
-set ruler
+set hlsearch
+set incsearch
 set ignorecase
 set smartcase
-set lazyredraw
-set hidden
 syntax on
+set wildmenu
+set ruler
+filetype plugin on
+
+"****************************
+"THINGS NOT EVERYONE MAY WANT
+"****************************
+set hidden
+set cursorline
+set ts=4
+set lazyredraw
+colorscheme evening
+set guifont=Consolas:h10:cANSI
+set backup
+"change this to point to some backup directory
+set backupdir=c:\users\leongyl\vimbak//
+"change this to point to some swap directory
+set directory=c:\users\leongyl\vimswap//
+
+"********************************
+"PERSONAL KEYBINDINGS AND PLUGINS
+"********************************
+inoremap <CR> <Esc>
+map <F1> :NERDTreeToggle<CR>
+execute pathogen#infect()
+source ~/vimfiles/marvim.vim
 "code folding
 nnoremap <space> za
 vnoremap <space> zf
 "buffer switching
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
-colorscheme evening
-set guifont=Consolas:h10:cANSI
-inoremap <CR> <Esc>
-source ~/vimfiles/marvim.vim
-execute pathogen#infect()
-map <F1> :NERDTreeToggle<CR>
-set wildmenu
-set ruler
-filetype plugin on "enables plugins for filetypes
 
-
-
-"auto reload the vimrc on save. UBER USEFUL ZOMG
+"use an autocmd to auto reload the vimrc on save.
 "http://www.bestofvim.com/tip/auto-reload-your-vimrc/
 "the enclosing augrop and autocmd! is to clear any previously
-"registered autocommands because autocmd is not idempotent, each
-"time you call, it will register a new instance, so eventually
+"registered autocommands because autocmd is not idempotent, so each
+"time you call, it will register a new instance and eventually
 "each save of vimrc will lead to source $MYVIMRC running a million times
 augroup reload_vimrc " {
     autocmd!
