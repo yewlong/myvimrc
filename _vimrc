@@ -12,6 +12,8 @@ syntax on
 set wildmenu
 set ruler
 filetype plugin on
+set backspace=indent,eol,start
+set noerrorbells
 
 "****************************
 "THINGS NOT EVERYONE MAY WANT
@@ -19,6 +21,7 @@ filetype plugin on
 set hidden
 set cursorline
 set ts=4
+set shiftwidth=4
 set lazyredraw
 colorscheme evening
 set guifont=Consolas:h10:cANSI
@@ -27,6 +30,7 @@ set backup
 set backupdir=c:\users\leongyl\vimbak//
 "change this to point to some swap directory
 set directory=c:\users\leongyl\vimswap//
+set fileformats=unix,dos,mac
 
 "********************************
 "PERSONAL KEYBINDINGS AND PLUGINS
