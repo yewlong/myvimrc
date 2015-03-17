@@ -23,22 +23,25 @@ set cursorline
 set ts=4
 set shiftwidth=4
 set lazyredraw
-colorscheme evening
+colorscheme solarized
+set background=dark
 set guifont=Consolas:h10:cANSI
 set backup
 "change this to point to some backup directory
-set backupdir=c:\users\leongyl\vimbak//
+set backupdir=~/.vimbak
 "change this to point to some swap directory
-set directory=c:\users\leongyl\vimswap//
+set directory=~/.vimswap
 set fileformats=unix,dos,mac
 
 "********************************
 "PERSONAL KEYBINDINGS AND PLUGINS
 "********************************
 inoremap <CR> <Esc>
-map <F1> :NERDTreeToggle<CR>
+map <C-b> :NERDTreeToggle<CR>
+"marvim mappings interfere with byobu mappings
+map <C-w> <F2> 
+map <C-v> <F3>
 execute pathogen#infect()
-source ~/vimfiles/marvim.vim
 "code folding
 nnoremap <space> za
 vnoremap <space> zf
