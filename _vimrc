@@ -41,6 +41,11 @@ vnoremap <space> zf
 "buffer switching
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
+"buffer navigation
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 "use an autocmd to auto reload the vimrc on save.
 "http://www.bestofvim.com/tip/auto-reload-your-vimrc/
