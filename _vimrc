@@ -19,6 +19,9 @@ filetype plugin on
 set hidden
 set cursorline
 set ts=4
+set shiftwidth=4
+set softtabstop=4
+set noexpandtab
 set lazyredraw
 colorscheme evening
 set guifont=Consolas:h10:cANSI
