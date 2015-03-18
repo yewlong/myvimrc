@@ -22,6 +22,8 @@ set hidden
 set cursorline
 set ts=4
 set shiftwidth=4
+set softtabstop=4
+set noexpandtab
 set lazyredraw
 colorscheme solarized
 set background=dark
@@ -37,10 +39,10 @@ set fileformats=unix,dos,mac
 "PERSONAL KEYBINDINGS AND PLUGINS
 "********************************
 inoremap <CR> <Esc>
-map <C-b> :NERDTreeToggle<CR>
+map <Leader>1 :NERDTreeToggle<CR>
 "marvim mappings interfere with byobu mappings
-map <C-w> <F2> 
-map <C-v> <F3>
+nmap <Leader>2 <F2>
+map <Leader>3 <F3>
 execute pathogen#infect()
 "code folding
 nnoremap <space> za
