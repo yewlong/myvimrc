@@ -12,6 +12,8 @@ syntax on
 set wildmenu
 set ruler
 filetype plugin on
+set backspace=indent,eol,start
+set noerrorbells
 
 "****************************
 "THINGS NOT EVERYONE MAY WANT
@@ -30,6 +32,7 @@ set backup
 set backupdir=c:\users\leongyl\vimbak//
 "change this to point to some swap directory
 set directory=c:\users\leongyl\vimswap//
+set fileformats=unix,dos,mac
 
 "********************************
 "PERSONAL KEYBINDINGS AND PLUGINS
