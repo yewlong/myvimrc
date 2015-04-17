@@ -26,14 +26,14 @@ set shiftwidth=4
 set softtabstop=4
 set noexpandtab
 set lazyredraw
+colorscheme solarized
 set background=dark
-colorscheme evening
 set guifont=Consolas:h10:cANSI
 set backup
 "change this to point to some backup directory
-set backupdir=c:\users\leongyl\vimbak//
+set backupdir=~/.vimbak
 "change this to point to some swap directory
-set directory=c:\users\leongyl\vimswap//
+set directory=~/.vimswap
 set fileformats=unix,dos,mac
 set virtualedit=block
 
@@ -41,9 +41,11 @@ set virtualedit=block
 "PERSONAL KEYBINDINGS AND PLUGINS
 "********************************
 inoremap <CR> <Esc>
-map <F1> :NERDTreeToggle<CR>     
-execute pathogen#infect()        
-source ~/vimfiles/marvim.vim
+map <Leader>1 :NERDTreeToggle<CR>
+"marvim mappings interfere with byobu mappings
+nmap <Leader>2 <F2>
+map <Leader>3 <F3>
+execute pathogen#infect()
 "code folding
 nnoremap <space> za
 vnoremap <space> zf
