@@ -8,12 +8,13 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-syntax on
+syntax enable
 set wildmenu
 set ruler
 filetype plugin on
 set backspace=indent,eol,start
 set noerrorbells
+set showcmd
 
 "****************************
 "THINGS NOT EVERYONE MAY WANT
@@ -25,6 +26,7 @@ set shiftwidth=4
 set softtabstop=4
 set noexpandtab
 set lazyredraw
+set background=dark
 colorscheme evening
 set guifont=Consolas:h10:cANSI
 set backup
@@ -33,13 +35,14 @@ set backupdir=c:\users\leongyl\vimbak//
 "change this to point to some swap directory
 set directory=c:\users\leongyl\vimswap//
 set fileformats=unix,dos,mac
+set virtualedit=block
 
 "********************************
 "PERSONAL KEYBINDINGS AND PLUGINS
 "********************************
 inoremap <CR> <Esc>
-map <F1> :NERDTreeToggle<CR>
-execute pathogen#infect()
+map <F1> :NERDTreeToggle<CR>     
+execute pathogen#infect()        
 source ~/vimfiles/marvim.vim
 "code folding
 nnoremap <space> za
