@@ -31,9 +31,9 @@ colorscheme evening
 set guifont=Consolas:h10:cANSI
 set backup
 "change this to point to some backup directory
-set backupdir=c:\users\leongyl\vimbak//
+set backupdir=~/.vimbak
 "change this to point to some swap directory
-set directory=c:\users\leongyl\vimswap//
+set directory=~/.vimswap
 set fileformats=unix,dos,mac
 set virtualedit=block
 
