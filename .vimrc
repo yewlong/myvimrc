@@ -37,6 +37,8 @@ set directory=~/.vimswap
 set fileformats=unix,dos,mac
 set showcmd
 set virtualedit=block
+nnoremap n nzz
+nnoremap N Nzz
 
 "********************************
 "PERSONAL KEYBINDINGS AND PLUGINS
