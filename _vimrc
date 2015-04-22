@@ -27,7 +27,7 @@ set softtabstop=4
 set noexpandtab
 set lazyredraw
 set background=dark
-colorscheme evening
+colorscheme solarized
 set guifont=Consolas:h10:cANSI
 set backup
 "change this to point to some backup directory
@@ -36,6 +36,8 @@ set backupdir=~/vimbak
 set directory=~/vimswap
 set fileformats=unix,dos,mac
 set virtualedit=block
+nnoremap n nzz
+nnoremap N Nzz
 
 "********************************
 "PERSONAL KEYBINDINGS AND PLUGINS
@@ -47,6 +49,7 @@ source ~/vimfiles/marvim.vim
 "code folding
 nnoremap <space> za
 vnoremap <space> zf
+set foldmethod=indent
 "buffer switching
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
