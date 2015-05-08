@@ -35,6 +35,7 @@ set backupdir=~/.vimbak
 "change this to point to some swap directory
 set directory=~/.vimswap
 set fileformats=unix,dos,mac
+set formatoptions+=n
 set showcmd
 set virtualedit=block
 nnoremap n nzz
