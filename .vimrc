@@ -25,10 +25,10 @@ set shiftwidth=4
 set softtabstop=4
 set noexpandtab
 set lazyredraw
-colorscheme solarized
+"colorscheme solarized
 set background=dark
 "hi cursorline cterm=none ctermbg=9
-set guifont=Consolas:h10:cANSI
+"set guifont=Consolas:h10:cANSI
 set backup
 "change this to point to some backup directory
 set backupdir=~/.vimbak
@@ -44,10 +44,10 @@ nnoremap N Nzz
 "********************************
 "PERSONAL KEYBINDINGS AND PLUGINS
 "********************************
-inoremap <CR> <Esc>
-map <F1> :NERDTreeToggle<CR>
+"inoremap <CR> <Esc>
+"map <F1> :NERDTreeToggle<CR>
 "marvim mappings interfere with byobu mappings
-execute pathogen#infect()
+"execute pathogen#infect()
 "code folding
 nnoremap <space> za
 vnoremap <space> zf
@@ -59,14 +59,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
-
-"******************
-"Dillo Coding Style
-"******************
-set ts=3
-set shiftwidth=3
-set softtabstop=3
-set expandtab
 
 "use an autocmd to auto reload the vimrc on save.
 "http://www.bestofvim.com/tip/auto-reload-your-vimrc/
